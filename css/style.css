@@ -22,6 +22,7 @@ body {
     color: var(--blak-color);
     line-height: (24 / 16);
 }
+/* header */
 .header-Studio {
     color: var(--blak-color);
     font-family: Raleway;
@@ -29,6 +30,26 @@ body {
     font-size: 26px;
     line-height: 31px;
 }
+.header-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-icon {
+    fill: var(--grey-color);
+}
+.header-nav-link {
+    color: var(--blak-color);
+}
+.header-contact-link {
+    padding: 15px 0;
+    color: var(--grey-color);
+    font-weight: 500;
+}
+.header-contact-item:is(:hover, :focus) .contact-icon {
+    fill: var(--blue-color);
+}
+
 .item {
     color: var(--blue-color);
 }
@@ -277,12 +298,6 @@ body {
     padding: 6px 25px;
     border-radius: 4px;
 }
-.header-nav-link {
-    color: var(--blak-color);
-}
-.header-contact-link {
-    color: var(--blak-color);
-}
 .footer {
     padding-top: 60px;
 }
@@ -346,7 +361,7 @@ body {
     padding-left: 24px;
 }
 .social-icon {
-    fill: var(--grey-color);
+    fill: var(--grey-regular-customers-color);
     width: 20px;
     height: 20px;
 }
@@ -361,19 +376,19 @@ body {
     width: 44px;
     height: 44px;
 }
-/* .social-icon:is(:hover, :focus) {
+.team-social-item:is(:hover, :focus) {
+    background-color: var(--blue-color);
+    border-radius: 50px;
+}
+.team-social-item:is(:hover, :focus) .social-icon {
     fill: var(--white-color);
-} */
+}
 .team-social-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-}
-.team-social-link:is(:hover, :focus) {
-    background-color: var(--blue-color);
-    border-radius: 50px;
 }
 /* regular-customers */
 .regular-customers-container {
@@ -397,7 +412,7 @@ body {
 .regular-customers-icon {
     width: 106px;
     height: 60px;
-    fill: var(--grey-color);
+    fill: var(--grey-regular-customers-color);
 }
 .regular-customers-title {
     font-family: Roboto;
